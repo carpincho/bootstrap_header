@@ -1,4 +1,4 @@
-bootstrap_header
+Bootstrap Navbar (example)
 ================
 
-trying some stuff with twitter bootstrap
+Trying some stuff with twitter bootstrap.
