@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <style>
+        body {
+            padding-top: 60px; /* When using the navbar-top-fixed */
+        }
+    </style>
+    <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+</head>
+<body>
+    <title>Bootstrap navbar with dropdown menus</title>
+
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container-fluid"> <!-- adds left and right padding -->
+                <a class="brand" href="#">Project Name</a>
+
+                <div class="nav-collapse collapse"> <!-- divide by the links and the pull right elements at the bottom with the p tag-->
+                <ul class="nav"> <!-- starts the link menus -->
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown with left <b class="caret"></b></a>
+                        <ul class="dropdown-menu pull-left">
+                            <li><a tabindex="-1" href="#">Action</a></li>
+                            <li><a tabindex="-1" href="#">Another action</a></li>
+                            <li><a tabindex="-1" href="#">Something else here</a></li>
+                            <li class="divider"></li>
+                            <li><a tabindex="-1" href="#">Separated link</a></li>
+                        </ul>
+                    </li> <!-- dropdown -->
+
+                    <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown with right <b class="caret"></b></a>
+                        <ul class="dropdown-menu pull-right">
+                            <li><a tabindex="-1" href="#">Action</a></li>
+                            <li><a tabindex="-1" href="#">Another action</a></li>
+                            <li><a tabindex="-1" href="#">Something else here</a></li>
+                            <li class="divider"></li>
+                            <li><a tabindex="-1" href="#">Separated link</a></li>
+                        </ul>
+                    </li> <!-- dropdown -->
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown with submenu <b class="caret"></b></a>
+                        <ul class="dropdown-menu pull-right">
+                            <li><a tabindex="-1" href="#">Action</a></li>
+                            <li><a tabindex="-1" href="#">Another action</a></li>
+                            <li><a tabindex="-1" href="#">Something else here</a></li>
+                            <li class="divider"></li>
+                            <li class="dropdown-submenu">
+                                <a tabindex="-1" href="#">More options</a>
+                                <ul class="dropdown-menu">
+                                   <li><a tabindex="-1" href="#">Action</a></li>
+                                   <li><a tabindex="-1" href="#">Another action</a></li>
+                                </ul>
+                            </li> <!-- sub dropdown -->
+                        </ul>
+                    </li> <!-- dropdown -->
+                </ul> <!-- ends link menus -->
+                <!-- here comes the things that will appear at the right side of the navbar -->
+                <!--<p class="navbar-text pull-right">Logged in as <a href="#" class="navbar-link">Username</a></p> -->
+                <ul class="nav pull-right"><!-- navbar2-->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-user icon-white"></i> Username <b class="caret"></b></a>
+                        <ul class="dropdown-menu pull-right">
+                            <li><a tabindex="-1" href="#"><i class="icon-cog"></i> Preferences</a></li>
+                            <li><a tabindex="-1" href="#"><i class="icon-edit"></i> Change Password</a></li>
+                            <li class="divider"></li>
+                            <li><a tabindex="-1" href="#"><i class="icon-off"></i> Logout</a></li>
+                        </ul>
+                    </li> <!-- dropdown -->
+                </ul> <!-- ends navbar2 pulled right-->
+
+            </div><!--nav-collapse collapse-->
+            </div><!--container-fluid-->
+        </div><!--navbar-inner-->
+    </div><!--navbar navbar-inverse navbar-fixed-top-->
+
+    <div> <!-- content follows here -->
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et neque quam. Maecenas nec lorem sit amet urna suscipit cursus. Suspendisse potenti. Ut arcu ipsum, posuere nec mollis at, venenatis placerat augue. Maecenas condimentum volutpat dui, non luctus purus ultrices id. Aenean fringilla ullamcorper felis, non gravida urna pulvinar a. In vestibulum mauris vel leo blandit vel volutpat ipsum lobortis. Etiam vel risus dui, eu molestie urna.
+        </p>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
